@@ -3,7 +3,7 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '11.0'
 
-target 'razorpayCustomui' do
+target 'paymentDemo' do
   config = use_native_modules!
 
   use_react_native!(
@@ -12,7 +12,7 @@ target 'razorpayCustomui' do
     :hermes_enabled => false
   )
 
-  target 'razorpayCustomuiTests' do
+  target 'paymentDemoTests' do
     inherit! :complete
     # Pods for testing
   end

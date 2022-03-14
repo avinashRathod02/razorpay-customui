@@ -1,3 +1,5 @@
-rootProject.name = 'razorpayCustomui'
+rootProject.name = 'paymentDemo'
+include ':react-native-customui'
+project(':react-native-customui').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-customui/android')
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
 include ':app'
